@@ -1,1 +1,22 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ponds</title>
+	<link rel="stylesheet" type="text/css" href="spatial_style.css">
+</head>
+<body onload="startPond('Pond')">
+
+<div id="div0" class="pond">
+	<p><a href="javascript:Toggle(0)" id="arrow0">+</a>Pond of life</p>
+	<div id="container0" style="display: none"></div>
+</div>
+
+
+<a href="javascript:showInstances()">Show Instances</a>
+<a href="javascript:showPonds()">Show Types</a>
+
+<div id="instances"></div>
+<div id="ponds"></div>
+<script type="text/javascript" src="spatial_pond.js"></script>
+</body>
+</html>
