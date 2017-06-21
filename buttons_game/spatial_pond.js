@@ -120,7 +120,7 @@ Instance.prototype.List = function() {
 	for (var c in this.children) {
 		child = this.children[c];
 		console.log("listing: current child " + child);
-		containerStr += '<div id="div'+child.id+'" class="pond">' + //div holds dropdown click and children instances
+		containerStr += '<div id="div'+child.id+'" class="pond">' + //div holds dropdown click and children container
 			'<p><a href="javascript:Toggle('+child.id+')" id="arrow'+child.id+'">+</a>'+child.type+'</p>' + //a holds clickable and name of this instance
 			'<div id="container'+child.id+'" style="display: none;"></div>' + //div container for this children
 			'</div>';
@@ -164,6 +164,21 @@ new Pond("oxygen",["atom"]);
 new Pond("nitrogen",["atom"]);
 new Pond("carbon",["atom"]);
 new Pond("calcium",["atom"]);
+new Pond("helium",["atom"]);
+new Pond("neon",["atom"]);
+new Pond("silicon",["atom"]);
+new Pond("iron",["atom"]);
+new Pond("electron", ["interdimentional horror"]);
+//spatial bodies
+new Pond("universe", ["supercluster,5-10"]);
+new Pond("supercluster",["galaxy,4-8"]);
+new Pond("galaxy", ["solar system,3-5"]);
+new Pond("solar system", ["gas giant,1-2", "habitable planet,1-2", "meteorite,3-4","moon,0-5","star"]);
+new Pond("gas giant", ["helium"]);
+new Pond("habitable planet", ["Pond"]);
+new Pond("moon", ["Pond"]);
+new Pond("meteorite",["iron","water"]);
+new Pond("star",["hydrogen", "helium","carbon","neon","oxygen","silicon","iron,10%"]);
 //chemical compounds
 new Pond("water", ["hydrogen", "oxygen,2"]);
 new Pond("adenine",["carbon","hydrogen","nitrogen"]);
@@ -201,6 +216,8 @@ new Pond("hole");
 new Pond("ocean monument");
 //TODO add dwarf world
 //TODO add namegen for each item
+//fictional creatures
+new Pond("interdimentional horror", ["gas pouch", "exoskeleton", "flesh", "man", "space ship", "blue star"]);
 
 function startPond(startType) {
 	if (Ponds[startType] == undefined)
