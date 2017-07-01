@@ -12,12 +12,14 @@ function Toggle(instanceId) {
 	//check the current display state of the instance and toggle its display
 	if (instance.display) {
 		document.getElementById("arrow" + instanceId).innerHTML = "+";
-		x.style.display = "none";
+		// x.style.display = "none";
+		$(x).slideToggle();
 		instance.display = false;
 		console.log("toggled container" + instanceId + " off");
 	} else {
 		document.getElementById("arrow" + instanceId).innerHTML = "-";
-		x.style.display = "block";
+		// x.style.display = "block";
+		$(x).slideToggle();
 		instance.display = true;
 		console.log("toggled container" + instanceId + " on");
 	}
@@ -123,12 +125,13 @@ Instance.prototype.Grow = function() {
 Instance.prototype.List = function() {
 	container = document.getElementById("container" + this.id);	//the container that holds the children
 	containerStr = "";
+	style = 'style="display: none;"';
 	for (var c in this.children) {
 		child = this.children[c];
 		console.log("listing: current child " + child);
 		containerStr += '<div id="div'+child.id+'" class="pond">' + //div holds dropdown click and children container
-			'<p><a href="javascript:Toggle('+child.id+')" id="arrow'+child.id+'">+</a>'+child.name+'</p>' + //a holds clickable and name of this instance
-			'<div id="container'+child.id+'" style="display: none;"></div>' + //div container for this children
+			'<p><a href="javascript:Toggle('+child.id+')" id="arrow'+child.id+'" class="button">+</a>'+child.name+'</p>' + //a holds clickable and name of this instance
+			'<div id="container'+child.id+'"'+style+'></div>' + //div container for this children
 			'</div>';
 	}
 	container.innerHTML = containerStr;

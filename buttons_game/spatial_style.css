@@ -1,4 +1,66 @@
+@font-face {
+	font-family: "Panton-BlackCaps";
+	src: url('fonts/Panton-BlackCaps.otf');
+}
+@font-face {
+	font-family: "Panton-BlackitalicCaps";
+	src: url('fonts/Panton-BlackitalicCaps.otf');
+}
+@font-face {
+	font-family: "Panton-LightCaps";
+	src: url('fonts/Panton-LightCaps.otf');
+}
+@font-face {
+	font-family: "Panton-LightitalicCaps";
+	src: url('fonts/Panton-LightitalicCaps.otf');
+}
+
+html {
+	font-family: "Panton-LightCaps", Times, Serif;
+	-webkit-font-smoothing: antialiased !important;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	background-color: #196f75;
+	color: #5d6060;
+}
+a {
+	color: #5d6060;
+	text-decoration: none;
+}
 .pond {
-	margin-left: 16px;
-	padding-bottom: 0px;
+	margin: 5px 5px 5px 16px;
+	overflow: auto;
+	background-color: #c1faff;
+	text-transform: uppercase;
+	border-style: solid;
+	border-width: 0.1px;
+	/*border-color: #afbbbc;*/
+	border-color: #89dfe5;
+}
+.pond p {
+	margin:0px;
+	padding: 6px;
+	background-color: #89dfe5;
+}
+.pond a {
+	width: 20px;
+	height: 20px;
+	margin-right: 4px;
+	padding: 0px;
+}
+
+.masthead {
+	background-color: #2dbcc6;
+	font-size: 60px;
+	color: #FFFFFF;
+}
+.masthead p {
+	margin: 0px;
+	padding: 1% 2% 1% 2%; 
+}
+
+.button{
+	text-align: center;
+	display: inline-block;
+	background-color: #5ec9d1;
+	padding: 1% 2% 1% 2%;
 }

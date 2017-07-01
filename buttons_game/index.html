@@ -3,25 +3,30 @@
 <head>
 	<title>Ponds</title>
 	<link rel="stylesheet" type="text/css" href="spatial_style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 
+<div class="masthead">
+	<p>the great pond</p>
+</div>
 <div id="div0" class="pond">
-	<p><a href="javascript:Toggle(0)" id="arrow0">+</a>Pond of life</p>
+	<p><a href="javascript:Toggle(0)" id="arrow0" class="button">+</a>Pond of life</p>
 	<div id="container0" style="display: none"></div>
 </div>
 
+<a href="javascript:showInstances()" class="button">Show Instances</a>
+<a href="javascript:showPonds()" class="button">Show Types</a>
 
-<a href="javascript:showInstances()">Show Instances</a>
-<a href="javascript:showPonds()">Show Types</a>
-
-<div id="instances"></div>
-<div id="ponds"></div>
+<div class="show">
+	<div id="instances"></div>
+	<div id="ponds"></div>
+</div>
 
 <script type="text/javascript" src="spatial_pond.js"></script>
 <script type="text/javascript" src="spatial_pond_types.js"></script>
-<script>
-	startPond('Pond')
+<script type="text/javascript">
+	startPond('Pond');
 </script>
 </body>
 </html>
