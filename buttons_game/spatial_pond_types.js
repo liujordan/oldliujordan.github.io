@@ -6,6 +6,11 @@ new things can be made by adding:
 above example will have at least one of the first three items and 50% chance of having the fourth one.
 things without children can be made by omitting the second argument
 
+  new Pond("...", [...], "nickname");
+  new Pond("...", [...], [["Mr. ", "Mrs. ", "Dr. "], ["Sam ", "Jones ", "James"], ["Smith"]]);
+
+above examples show examples of generating names
+
 	new Pond("i cant have children");
 */
 //TODO add namegen for each item with similar structure but differnt names (ie cows, pigs, dogs)
@@ -14,10 +19,10 @@ things without children can be made by omitting the second argument
 //thoughts
 new Pond("animal thoughts", []); //TODO give animal thoughts namegen
 new Pond("human thoughts", []); //TODO give human thoughts namegen
-
-
 //the big splash
-new Pond("Pond", ["grass,1-2", "water", "fish,1-2", "hole,20%", "seaweed", "ocean monument,12%"]);
+new Pond("Pond", ["grass,1-2", "water", "fish,1-2", "hole,20%", "seaweed", "ocean monument,12%", "Mobius,5"]);
+new Pond("Mobius", ["OC"]);
+new Pond("OC", [], [["Sonic, ", "Knuckles, ", "Shadow, ", "Tails, "], ["The "], ["Hedgehog", "Echidna", "Semonhog", "Dog"]]);
 //subatomic
 new Pond("atom", ["proton","neutron"]);
 new Pond("proton", ["up quark", "down quark"]);
