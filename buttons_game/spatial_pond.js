@@ -43,15 +43,8 @@ function Pond(name, contains, namegen) {
 		this.contains = [];
 	}
 	this.namegen = namegen;		//possible names for this type
-	if (namegen == undefined) {
-		this.namegen = [name];
-	} else if (namegen.constructor === Array) {
-		this.namegen = "";
-		for (var i = 0; i < namegen.length; i++) {
-			this.namegen += namegen[i][Choose(0, namegen[i].length - 1)];
-		}
-	} else if (typeof namegen === 'string') {
-		this.namegen = [namegen];
+	if (this.namegen == undefined) {
+		this.namegen = [[name]];
 	}
 	this.id = iP;							//id of the new type
 	Ponds[name] = this;				//types are stored in the dictionary as this.name:this
@@ -116,9 +109,13 @@ Instance.prototype.Grow = function() {
 			}
 
 			//Make makenum amount of the current type
-			for(var i = 0; i < toMakeNum; i++){
+			for(var i = 0; i < toMakeNum; i++) {
 				var New = Make(toMake);	//make a new instance of the type
-				New.name = New.type.namegen; //default naming of new instance
+				New.name = "";
+				//build the name
+				for (var j = 0; j < New.type.namegen.length; j++) {
+					New.name += New.type.namegen[j][Choose(0, New.type.namegen[j].length - 1)];
+				}
 				//TODO parse namegen and set the name of New.name accordingly
 				this.children.push(New);				//add the child to this instance's list of children
 			}

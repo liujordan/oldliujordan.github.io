@@ -17,12 +17,13 @@ above examples show examples of generating names
 //names displayed are names of the type by default
 
 //thoughts
-new Pond("animal thoughts", []); //TODO give animal thoughts namegen
-new Pond("human thoughts", []); //TODO give human thoughts namegen
+new Pond("animal thoughts",["animal thought"]); //TODO give animal thoughts namegen
+new Pond("human thoughts",["human thought"]); //TODO give human thoughts namegen
+new Pond("human thought",[] , [["joe betridge is the best lecturer i've had", "joe betridge is the worst lecturer i've had", ]]); //TODO give human thoughts namegen
+new Pond("animal thought", [] , [["can i eat that", "should i eat that", "grrrrrrrrrr", "i wish i was a lobster", "i wish i can fly", "cscb07 is terrible"]])
 //the big splash
-new Pond("Pond", ["grass,1-2", "water", "fish,1-2", "hole,20%", "seaweed", "ocean monument,12%", "Mobius,5"]);
-new Pond("Mobius", ["OC"]);
-new Pond("OC", [], [["Sonic, ", "Knuckles, ", "Shadow, ", "Tails, "], ["The "], ["Hedgehog", "Echidna", "Semonhog", "Dog"]]);
+
+new Pond("Pond", ["grass,1-2", "water", "fish,1-2", "hole,20%", "seaweed", "ocean monument,12%"]);
 //subatomic
 new Pond("atom", ["proton","neutron"]);
 new Pond("proton", ["up quark", "down quark"]);
@@ -56,11 +57,14 @@ new Pond("supercluster",["galaxy,4-8"]);
 new Pond("galaxy", ["solar system,3-5"]);
 new Pond("solar system", ["gas giant,1-2", "habitable planet,1-2", "meteorite,3-4","moon,0-5","star"]);
 new Pond("gas giant", ["helium", "hydrogen"]);
-new Pond("habitable planet", ["Pond"]);
+new Pond("habitable planet", ["Pond", "continent,2-6"]);
 new Pond("moon", ["Pond"]);
 new Pond("meteorite",["iron","water"]);
 new Pond("star",["hydrogen", "helium","carbon","neon","oxygen","silicon","iron,10%"]);
 new Pond("ice giant", ["oxygen", "carbon", "nitrogen", "sulfur"]);
+new Pond("continent", ["country,1-3"]);
+new Pond("country", ["city,1-4"]);
+new Pond("city", ["man,5-10"]);
 //chemical compounds
 new Pond("water", ["hydrogen", "oxygen,2"]);
 new Pond("adenine",["carbon","hydrogen","nitrogen"]);
@@ -102,7 +106,7 @@ new Pond("dirt", ["plant cells,60%", "bacteria", "virus,10%"]);
 new Pond("feather", "protein", "lipid");
 new Pond("talon", "keratin");
 //complex life
-new Pond("bug", ["exoskeleton"]);
+new Pond("bug", ["exoskeleton", "juice"]);
 new Pond("juice", ["water"]);
 new Pond("seaweed", ["plant cells"]);
 new Pond("cactus", ["plant cells", "juice"]);
