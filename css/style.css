@@ -41,7 +41,7 @@ footer {
   margin-bottom: 2rem;
 }
 
-button {
+button, a {
   margin-top: 4px;
 }
 /*html {
