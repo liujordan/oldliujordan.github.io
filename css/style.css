@@ -1,0 +1,138 @@
+.hero {
+  height: 100vh;
+}
+
+.hero h1 {
+  font-size: 6rem;
+}
+
+.hero h2 {
+  font-size: 2rem;
+}
+
+.centered {
+  display: flex;
+  /*text-align: center;*/
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row {
+  border: 1px dashed red /* demo */
+}
+
+@media (min-width: 780px) {
+  .hidden-ss {
+    display: none !important;
+  }
+}
+
+.topcorner{
+  position:absolute;
+  top:1%;
+  right:1%;
+}
+
+section {
+  height: 100%;
+}
+
+footer {
+  margin-bottom: 2rem;
+}
+
+button {
+  margin-top: 4px;
+}
+/*html {
+  color: #848484; }
+
+.round {
+  border-radius: 50%; }
+
+.noscroll {
+  overflow: hidden; }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh; }
+
+.mdl-layout__drawer-button {
+  color: rgba(0, 0, 0, 0.3); }
+
+.site-header {
+  color: #848484;
+  background-color: #ffffff; }
+  .site-header .mdl-navigation__link {
+    color: #848484; }
+
+.aux {
+  max-width: 61.25rem;
+  margin: 0 auto;
+  width: 100%; }
+
+.greyed {
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); }
+
+.centered {
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center; }
+
+.mdl-mini-footer i {
+  font-size: 1.5rem; }
+
+.credit {
+  font-style: italic;
+  font-weight: 100;
+  color: #848484;
+  text-decoration: none;
+  font-size: 0.75rem; }
+
+.hero__bg-container {
+  background-image: url("../img/72twt81916cz.gif");
+  background-position: center center;
+  background-size: cover;
+  height: 40em; }
+
+.hero__bg-overlay {
+  padding: 12% 8% 12% 8%;
+  color: white; }
+
+.hero__bg-overlay > h1, h4 {
+  font-weight: 100;
+  text-align: center; }
+
+.site-section {
+  vertical-align: middle; }
+
+.site-section img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  max-height: 20rem; }
+
+.site-section-content p {
+  font-weight: 300; }
+
+.site-section-content h1 {
+  font-weight: 200;
+  font-size: 3.5rem; }
+
+.textbox {
+  padding: 10%; }
+
+.site-section--grey {
+  background-color: rgba(0, 0, 0, 0.05); }
+
+.site-section--white {
+  background-color: #ffffff; }
+
+.scroll-fade {
+  opacity: 0;
+  background-color: black; }
+
+/*# sourceMappingURL=../../../../static/django_portfolio/css/index.css.map */*/
