@@ -13,24 +13,24 @@
 <body>
   <div class="container">
     <div class="hero centered">
-      <section class="centered" id="home">
+      <section class="centered fadeInLeft" id="home">
         <h1>Hi, I'm <br class="hidden-ss">Jordan Liu</h1>
         <h4>Please hire me.</h4>
       </section>
-      <section class="centered" id="side_projects" style="display: none">
+      <section class="centered fadeInLeft" id="side_projects" style="display: none">
           <div class="container">
             <h1>Side Projects</h1>
             <a href="shapes.html" class="btn btn-outline-primary">Shapes</a>
             <a href="pond.html" class="btn btn-outline-primary">Nested</a>
         </div>
       </section>
-      <section class="centered" id="about_me" style="display: none">
+      <section class="centered fadeInLeft" id="about_me" style="display: none">
         <div class="container">
           <h1>A bit about me</h1>
           <p>I'm Jordan and I love to learn! I'm a second year student studying software engineering at University of Toronto Scarborough. I am an goal-oriented individual that constantly seeks challenges for self-improvement and overall personal growth.
         </div>
       </section>
-      <section class="centered" id="experience"  style="display: none">
+      <section class="centered fadeInLeft" id="experience"  style="display: none">
         <h1>I know</h1>
         <div class="container">
           <button type="button" class="btn btn-info">Kubernetes</button>
@@ -55,7 +55,7 @@
         <a href="https://www.linkedin.com/in/jordan-liu-3b8261127/" class="btn btn-outline-primary ">LinkedIn</a>
       </footer>
     </div>
-  <div>
+  </div>
 
 
 
@@ -67,16 +67,20 @@
 
 
 <!-- Bootstrap -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 
 <script type="text/javascript">
-
   function show_section(str) {
     $("section").hide();
     $("section#"+str).show();
+//     $("section#"+str).fadeIn(function(){ 
+//     $('#content').animate({
+//         left: "80px"
+//     }, 500); 
+// },1500).css('left' ,'0');
   }
 </script>
 
